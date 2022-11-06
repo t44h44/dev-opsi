@@ -19,6 +19,13 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SecteurActivite implements Serializable{
+	
+	public SecteurActivite(String codeSecteurActivite, String libelleSecteurActivite) {
+		super();
+		this.codeSecteurActivite = codeSecteurActivite;
+		this.libelleSecteurActivite = libelleSecteurActivite;
+	}
+
 	/**
 	 * 
 	 */

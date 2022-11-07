@@ -19,18 +19,6 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    </properties>
 
-   <distributionManagement>
-      <snapshotRepository>
-         <id>nexus-snapshots</id>
-         <url>http://192.168.0.102:8081/repository/maven-snapshots/</url>
-      </snapshotRepository>
-      <repository>
-         <id>nexus-releases</id>
-         <url>http://192.168.0.102:8081/repository/maven-releases/ </url>
-      </repository>
-
-
-   </distributionManagement>
    <dependencies>
       <dependency>
          <groupId>org.springframework.boot</groupId>
@@ -127,11 +115,6 @@
                   </goals>
                </execution>
             </executions>
-            <configuration>
-               <serverId>nexus</serverId>
-               <nexusUrl>http://192.168.0.102:8081/</nexusUrl>
-               <skipStaging>true</skipStaging>
-            </configuration>
          </plugin>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>

@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dev-opsi" />
+        <module name="achat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dev-opsi" target="1.8" />
+      <module name="achat" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="dev-opsi" options="-parameters" />
+      <module name="achat" options="-parameters" />
     </option>
   </component>
 </project>

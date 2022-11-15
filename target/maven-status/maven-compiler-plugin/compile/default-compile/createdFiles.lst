@@ -5,7 +5,6 @@ tn\esprit\rh\achat\services\OperateurServiceImpl.class
 tn\esprit\rh\achat\controllers\ReglementRestController.class
 tn\esprit\rh\achat\repositories\CategorieProduitRepository.class
 tn\esprit\rh\achat\entities\Produit.class
-tn\esprit\rh\achat\test\ProductServiceImplMock$1.class
 tn\esprit\rh\achat\entities\Fournisseur.class
 tn\esprit\rh\achat\controllers\SecteurActiviteController.class
 tn\esprit\rh\achat\services\IReglementService.class
@@ -22,6 +21,7 @@ tn\esprit\rh\achat\repositories\StockRepository.class
 tn\esprit\rh\achat\controllers\CategorieProduitController.class
 tn\esprit\rh\achat\entities\CategorieProduit.class
 tn\esprit\rh\achat\repositories\DetailFournisseurRepository.class
+tn\esprit\rh\achat\test\FactureTest$1.class
 tn\esprit\rh\achat\services\IFournisseurService.class
 tn\esprit\rh\achat\entities\Stock.class
 tn\esprit\rh\achat\services\FactureServiceImpl.class
@@ -32,6 +32,7 @@ tn\esprit\rh\achat\repositories\ReglementRepository.class
 tn\esprit\rh\achat\controllers\StockRestController.class
 tn\esprit\rh\achat\repositories\ProduitRepository.class
 tn\esprit\rh\achat\controllers\ProduitRestController.class
+tn\esprit\rh\achat\test\FactureTest.class
 tn\esprit\rh\achat\controllers\OperateurController.class
 tn\esprit\rh\achat\services\CategorieProduitServiceImpl.class
 tn\esprit\rh\achat\entities\SecteurActivite.class
@@ -42,7 +43,6 @@ tn\esprit\rh\achat\controllers\FactureRestController.class
 tn\esprit\rh\achat\entities\Facture.class
 tn\esprit\rh\achat\entities\Reglement.class
 tn\esprit\rh\achat\entities\Operateur.class
-tn\esprit\rh\achat\test\ProductServiceImplMock.class
 tn\esprit\rh\achat\entities\DetailFacture.class
 tn\esprit\rh\achat\util\SpringFoxSwaggerConfig.class
 tn\esprit\rh\achat\entities\DetailFournisseur.class

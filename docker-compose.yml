@@ -1,19 +1,17 @@
-version: "3.3"
-
+version: '3.3'
 services:
   mysqldb:
-    container_name: mysqldb
-    image: mysql:8
+    image: mysql:5.7
     restart: unless-stopped
     environment:
-        MYSQL_DATABASE: 'achatdb'
-
+      MYSQL_DATABASE: achatdb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 
     ports:
-      - "3306:3306"
+      - 3306:3306
 
-  spring_app:
-    image: jihenelabidi/devopsi:1.0.0
-    container_name: achat
+  app:
+    build: ./
     restart: on-failure
     ports:
       - 8089:8089
@@ -21,9 +19,9 @@ services:
       - mysqldb
     environment:
       SPRING_APPLICATION_JSON: '{
-           "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/achatdb?useSSL=false",
-           "spring.datasource.username" : "root",
-           
-           "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
-           "spring.jpa.hibernate.ddl-auto" : "update"
-         }'
+        "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/achatdb?allowPublicKeyRetrieval=true&useSSL=false",
+        "spring.datasource.username" : "root",
+        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
+        "spring.jpa.hibernate.ddl-auto" : "update"
+      }'
+         

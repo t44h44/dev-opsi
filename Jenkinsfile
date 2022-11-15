@@ -83,7 +83,7 @@ pipeline {
            steps {
             mail bcc: '', body: '''Ping.. ,
             Pipeline successfully executed  .
-            Keep Up The Good Work''', cc: '', from: '', replyTo: '', subject: 'Devops Pipeline', to: 'ghaith.belhadjsghaier@esprit.tn'
+            Keep Up The Good Work''', cc: '', from: '', replyTo: '', subject: 'Devops Pipeline', to: 'sarra.klidi@esprit.tn'
             }
        }
     }

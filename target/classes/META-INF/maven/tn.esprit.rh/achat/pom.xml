@@ -113,10 +113,10 @@
 
 			<plugin>
                            <artifactId>maven-surefire-plugin</artifactId>
-                           <version>2.22.2</version>
                           <configuration>
                            <includes>
                               <include>tn.esprit.rh.achat.test.*</include>
+                              <include>FactureTest.java</include>
                            </includes>
                           </configuration>
                         </plugin>

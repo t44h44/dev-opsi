@@ -16,13 +16,13 @@ services:
     depends_on:
       - mysqldb
     image: aminelakhneche/tpachatproject
-#    container_name: houssemspring
+    container_name: dockerspring
     restart: on-failure
     ports:
       - "8089:8089"
     environment:
       SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url"  : "jdbc:mysql://mysqlcicd:3306/tpachato1?allowPublicKeyRetrieval=true&useSSL=false",
+        "spring.datasource.url"  : "jdbc:mysql://mysqlcicd:3306/achatdb?allowPublicKeyRetrieval=true&useSSL=false",
         "spring.datasource.username" : "root",
         "spring.datasource.password" : "root",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",

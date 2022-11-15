@@ -60,7 +60,7 @@ pipeline {
                  sh 'docker build --build-arg IP=0.0.0.0 -t sarraklidi/devops  .'
             }
         }
-
+/*
       stage('Push') {
 
 			steps {
@@ -68,7 +68,7 @@ pipeline {
 				sh 'docker push sarraklidi/devops'
 			}
 		}
-        
+        */
        stage('Run app With DockerCompose') {
               steps {
                 sh '''

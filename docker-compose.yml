@@ -13,7 +13,7 @@ services:
 
 
   app_achat_back:
-    image : ghaithbhs/devops
+    image : sarraklidi/devops
     depends_on:
       - mysqldatabase
     restart: on-failure
@@ -28,19 +28,3 @@ services:
             "spring.jpa.hibernate.ddl-auto" : "update",
             "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.MySQL5InnoDBDialect"
           }'
-    networks:
-      - backend-net
-      - frontend-net
-
-  app_achat_front :
-    image : ghaithbhs/achat_frontf
-    ports:
-      - 80:80
-    depends_on :
-      - app_achat_back
-    restart : on-failure
-    networks :
-      - frontend-net
-networks:
-  backend-net :
-  frontend-net :

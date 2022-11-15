@@ -6,8 +6,8 @@ pipeline {
                 stage('git') {
             steps {
             
-                git branch: 'Ghaith', url: 'https://github.com/GhaithBh/Devops.git',
-                credentialsId:"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";
+                git branch: 'sarra', url: 'https://github.com/t44h44/dev-opsi.git',
+                credentialsId:"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";
                 
             }
 }

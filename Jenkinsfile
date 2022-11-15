@@ -57,23 +57,22 @@ pipeline {
          stage('build')
         {
             steps {
-                 sh 'docker build --build-arg IP=192.168.1.114 -t ghaithbhs/devops  .'
+                 sh 'docker build --build-arg IP=192.168.43.26 -t sarraklidi/devops  .'
             }
         }
 
       stage('Push') {
 
 			steps {
-				sh 'echo $dockerhub_PSW | docker login -u ghaithbhs -p dckr_pat_PvFfLE0rm--tKJiRL1igKeLc2fQ'
-				sh 'docker push ghaithbhs/devops'
+				sh 'echo $dockerhub_PSW | docker login -u sarraklidi -p dckr_pat_os789gFKgYlRvT9wPzplzmIlttk'
+				sh 'docker push sarraklidi/devops'
 			}
 		}
         
        stage('Run app With DockerCompose') {
               steps {
                 sh '''
-                 docker pull ghaithbhs/devops
-                 docker pull ghaithbhs/achat_frontf
+                 docker pull sarraklidi/devops
 		 docker-compose up -d 
                  docker-compose ps
 		'''

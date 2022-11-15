@@ -57,7 +57,7 @@ pipeline {
          stage('build')
         {
             steps {
-                 sh 'docker build --build-arg IP=192.168.43.26 -t sarraklidi/devops  .'
+                 sh 'docker build --build-arg IP=0.0.0.0 -t sarraklidi/devops  .'
             }
         }
 

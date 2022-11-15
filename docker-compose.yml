@@ -13,8 +13,8 @@ services:
   app:
     depends_on:
       - mysqldb
-    image: islemoueslati/achat
-    container_name: achat
+    image: islemoueslati/achat:1.0.0
+    container_name: projetachat
     restart: on-failure
     ports:
       - "8089:8080"

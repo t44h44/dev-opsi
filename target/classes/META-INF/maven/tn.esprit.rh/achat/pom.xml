@@ -116,7 +116,7 @@
                            <version>2.22.2</version>
                           <configuration>
                            <includes>
-                              <include>TestStockMock.java</include>
+                              <include>FactureTest.java</include>
                            </includes>
                           </configuration>
                         </plugin>

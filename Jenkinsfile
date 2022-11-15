@@ -11,7 +11,7 @@ pipeline {
                 
             }
 }
-     
+/*     
         stage('MySQL') {
             steps{
                 sh '''
@@ -20,6 +20,7 @@ pipeline {
                 '''
             }
         }
+	*/
        stage ('artifact construction') {
             steps{
                 sh '''
@@ -28,6 +29,7 @@ pipeline {
                 '''
             }
         } 
+	    /*
         stage ('Unit Test') {
            steps{
                 sh '''
@@ -93,6 +95,6 @@ pipeline {
             Keep Up The Good Work''', cc: '', from: '', replyTo: '', subject: 'Devops Pipeline', to: 'ghaith.belhadjsghaier@esprit.tn'
             }
        }
-
+*/
     }
 }

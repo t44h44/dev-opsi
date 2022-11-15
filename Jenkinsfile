@@ -49,13 +49,6 @@ pipeline {
                 '''
             }
         }
-	 stage('Snyk') {
-      steps {
-        echo 'Testing...'
-	snykSecurity failOnError: false, failOnIssues: false, snykInstallation: 'Snyk', snykTokenId: 'Snyk-jenkins'
-        
-      }
-    } 
         stage('Nexus'){
             steps{
                 sh """mvn deploy """

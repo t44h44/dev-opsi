@@ -8,8 +8,6 @@ services:
       - MYSQL_DATABASE=achatdb
     ports:
         - 3306:3306
-    networks:
-      - backend-net
 
 
   app_achat_back:

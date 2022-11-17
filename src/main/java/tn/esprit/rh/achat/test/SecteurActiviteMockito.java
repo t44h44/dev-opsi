@@ -25,18 +25,15 @@ public class SecteurActiviteMockito {
     SecteurActiviteServiceImpl secteurSer;
 
     SecteurActivite secteur = new SecteurActivite("test", "test");
-    List<SecteurActivite> listSecteur = new ArrayList<SecteurActivite>() {
-        {
-            add(new SecteurActivite("code1", "secteur1"));
-            add(new SecteurActivite("code2", "secteur2"));
-        }
-    };
+    SecteurActivite secteur1 = new SecteurActivite("code1", "secteur1");
+    SecteurActivite secteur2 = new SecteurActivite("code2", "secteur2");
+    List<SecteurActivite> listSecteur = new ArrayList<SecteurActivite>() {};
     
     @Test
 
     void retreiveSecteurActivite() {
         Mockito.when(secteurRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(secteur));
-        SecteurActivite secteur1 = secteurSer.retrieveSecteurActivite(1L);
-        Assertions.assertNotNull(secteur1);
+        SecteurActivite secteur11 = secteurSer.retrieveSecteurActivite(1L);
+        Assertions.assertNotNull(secteur11);
     }
 }

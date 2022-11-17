@@ -30,7 +30,7 @@ public class SecteurActiviteJunit {
         @Test
         void addSecteurActivite() {
            SecteurActivite sa = new SecteurActivite();
-            sa.setLibelleSecteurActivite("stock test");
+            sa.setLibelleSecteurActivite("Secteur test");
 
             SecteurActivite savedSecteur1= Sa.addSecteurActivite(sa);
             assertEquals(sa.getLibelleSecteurActivite(), savedSecteur1.getLibelleSecteurActivite());
@@ -42,7 +42,7 @@ public class SecteurActiviteJunit {
         }
 
     @Test
-    void  updateStock() {
+    void  updateSecteurActivite() {
         SecteurActivite sa= Sa.retrieveSecteurActivite(0L);
         sa.setLibelleSecteurActivite("Secteur test");
         SecteurActivite updatedSecteur= Sa.updateSecteurActivite(sa);
@@ -50,7 +50,7 @@ public class SecteurActiviteJunit {
     }
 
         @Test
-        void retrieveStock() {
+        void retrieveSecteurActivite() {
             Sa.retrieveSecteurActivite(0L);
         }
 
